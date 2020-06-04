@@ -1,0 +1,78 @@
+body {
+	font-size: 22px;
+	line-height: 1.5;
+	font-family: Try Vesterbro;
+	background-color: #222222;
+	color: #fff;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: 0;
+  width:  100%;
+  height: 100%;
+  transform:  skewY(-5deg);
+  background-color: #292929;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+  padding-right:  16px;
+}
+
+header {
+  padding:  32px;
+  position:  fixed;
+  top:  0;
+  left:  0;
+  display:  flex;
+  justify-content:  space-between;
+  align-items:  center;
+}
+
+footer {
+  position:  fixed;
+  padding: 32px;
+  width:  100%;
+  bottom:  0;
+  left:  0;
+  display:  flex;
+  z-index: 2;
+  justify-content: space-between;
+  transform:  translate(0, 100%);
+  transition: transform 1s;
+}
+
+footer.show {
+  transform:  translate(0, 0);
+}
+a {
+  text-decoration:  none;
+  color:  #fff;
+}
+
+section {
+/*   padding:  100px 32px; */
+  position:  relative;
+  z-index: 1;
+  overflow: hidden;
+/*   display:  grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px; */
+}
+.slider {
+  display:  flex;
+  height:  100vh;
+  width:  fit-content;
+  transition:  transform 1s;
+}
+.slider div {
+  padding:  100px 32px;
+  width:  100vw;
+  height:  100vh;
+  text-align:  center;
+}
+
